@@ -76,10 +76,50 @@ nav ul li:hover{
 }
 
 section{
-    border: 3px solid;
+    /* border: 3px solid; */
     display: flex;
 }
-section .bills{
-    border: 2px solid red;
+section .bills {
+    /* border: 2px solid red; */
+    /* text-align: center; */
     
+}
+.bills h2{
+    text-align: center;
+    border-bottom:2px solid black ;
+    background-color: rgba(81, 255, 0, 0.466);
+    margin: 0;
+    padding: 1rem;
+}
+#plates{
+    flex-grow: 1;
+    border: 2px solid black;
+    
+}
+#price{
+    flex-grow: 1;
+    border: 2px solid black;
+    
+}
+#dishes{
+    flex-grow: 2;
+    border: 2px solid black;
+    
+}
+.add{
+    background-color:rgb(17, 0, 255);
+    text-align: center;
+    color: bisque;
+    font-size: 2rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    /* width: 2rem; */
+    
+}
+.add:hover{
+    background-color: rgb(14, 48, 200);;
+}
+#btn{
+    text-align: end;
 }

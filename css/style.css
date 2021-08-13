@@ -82,6 +82,7 @@ section{
 section .bills {
     /* border: 2px solid red; */
     /* text-align: center; */
+    /* height: 50%; */
     
 }
 .bills h2{
@@ -122,4 +123,7 @@ section .bills {
 }
 #btn{
     text-align: end;
+}
+.items{
+    display: block;
 }

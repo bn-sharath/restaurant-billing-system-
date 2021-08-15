@@ -1,79 +1,4 @@
-html{
-    font-size: 75%;
-}
-body{
-    margin-top: 0;
-}
-header::before{
-    position: absolute;
-    content: "";
-    background: url(../images/bg.jpg) center no-repeat;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* background: #000; */
-}
-.heading{
-    font-size: 2.3rem;
-    text-align: center;
 
-}
-.heading h1{
-    margin-bottom: 0.1rem;
-    margin-top: 0;
-    color: rgb(47, 96, 160);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.heading h3{
-    font-style: italic;
-    font-weight: bolder;
-    margin-top: 0;
-    margin-left: 20rem;
-    font-size: 1.5rem;
-    color: rgb(0,100,0);
-    font-family: cursive;
-    text-decoration: overline;
-}
-
-nav{
-    margin-top: 0;
-  /* border: 2px solid;   */
-  background-color: rgba(60, 255, 0, 0.13);
-  border-radius: 1rem;
-  
-  /* z-index: 1; */
-  /* opacity: 0.5; */
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    /* z-index: 2; */
-    /* opacity: 0.8; */
-}
-nav ul li{
-    
-    text-align: center;
-    /* border: 2px dotted; */
-    margin: 0 1rem;
-    font-size: 1.9rem;
-    cursor: pointer;
-    display: block;
-    padding: 0.7rem;
-    margin: 0;
-}
-nav ul li:hover{
-    background-color: rgba(81, 255, 0, 0.466);
-    color: wheat;
-    opacity: 0.7;
-}
 
 section{
     /* border: 3px solid; */
@@ -86,7 +11,8 @@ section{
     border-bottom:2px solid black ;
     background-color: rgba(81, 255, 0, 0.466);
     margin: 0;
-    padding: 1rem;
+    padding: 0.8rem;
+    font-size: 2rem;
 }
 #plates{
     flex-grow: 1;
@@ -104,6 +30,7 @@ section{
     
 }
 .add{
+    
     background-color:rgb(17, 0, 255);
     text-align: center;
     color: bisque;
@@ -111,29 +38,40 @@ section{
     padding: 0.7rem;
     border-radius: 1rem;
     cursor: pointer;
+    margin: 2rem ;
+    flex-grow: 1;
+    flex-shrink: 1;
+    box-shadow: 1rem 0.8rem 0.5rem rgba(3, 0, 0, 0.459);
     /* width: 2rem; */
     
 }
 .add:hover{
-    background-color: rgb(14, 48, 200);;
+    background-color: rgb(14, 48, 200);
+    box-shadow: 1rem 0.9rem 0.5rem rgba(128, 128, 128, 0.767);
 }
 #btn{
-    text-align: end;
+    display: flex;
+    justify-content:space-between;
+    
+    /* text-align: center; */
 }
+
+
 .items{
     border-radius: 1rem;
     display: block;
     width: 90%;
     background-color: rgba(0, 0, 0, 0.13);
     padding: 0.5rem;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 2rem;
     margin-bottom: 0.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     font-weight: 2rem;
 }
 #result{
-    text-align: center;
+    margin-top: 2rem;
+    text-align:center;
     font-size: 4rem;
     font-weight: 1.5rem;
     /* background-color: lightsalmon; */

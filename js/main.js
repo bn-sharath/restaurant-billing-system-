@@ -73,8 +73,8 @@ function addDish() {
     };
 
     priceInput.onkeyup = function (event) {
-        if (event.code == "Enter" || event.code == "NumpadEnter" ) {
-            
+        if (event.code == "Enter" || event.code == "NumpadEnter") {
+
             // console.log("working");
             addDish();
         }
@@ -91,7 +91,7 @@ function addDish() {
 }
 
 function totalPrice() {
-let str = "₹" + totalBill + " rupees only/-";//for ₹ this symbal use (ctr + alt + 4)
+    let str = "₹" + totalBill + " rupees only/-";//for ₹ this symbal use (ctr + alt + 4)
     document.getElementById("result").innerHTML = str;
 
 

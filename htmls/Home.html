@@ -8,10 +8,12 @@
     <title>Hotel billing system</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/menu.css">
-    <!-- <link rel="stylesheet" href="backgroud.css"> -->
+    <link rel="stylesheet" href="../css/card.css">
+
 </head>
 
 <body>
+    <!-- Navigation bar starting -->
     <nav>
         <ul>
             <li><a href="../htmls/Home.html">
@@ -33,36 +35,335 @@
                 </a>
 
             </li>
-            
+
         </ul>
-    </nav>
+    </nav> <!-- end of the navigation bar -->
+
+     <!-- header of the page with contain the heading and subheading starting -->
     <header>
         <div class="heading">
             <h1>Welcome to JS<sup>2</sup> restaurant</h1>
             <h3>Experiance New world </h3>
         </div>
-    </header>
-    <section>
-        <div class="bills" id="dishes">
-            <h2>Dishes</h2>
+    </header> <!-- End of the header -->
 
-        </div>
-        <div class="bills" id="plates">
-            <h2>Number of Plates</h2>
+     <!-- The main billing system is here  -->
+    <div id="HOME" class="whole">
 
+        <section>
+            <div class="bills" id="dishes">
+                <h2>Dishes</h2>
+
+            </div>
+            <div class="bills" id="plates">
+                <h2>Number of Plates</h2>
+
+            </div>
+            <div class="bills" id="price">
+                <h2>Price</h2>
+            </div>
+        </section>
+        <div id="btn">
+            <button class="add" id="additem">+ Add Item</button>
+            <button class="add" id="total">Total</button>
+            <button class="add" id="print">Print</button>
         </div>
-        <div class="bills" id="price">
-            <h2>Price</h2>
-        </div>
-    </section>
-    <div id="btn">
-        <button class="add" id="additem">+ Add Item</button>
-        <button class="add" id="total">Total</button>
-        <button class="add" id="print">Print</button>
-    </div>
-    <div id="result"></div>
+        <div id="result"></div>
+    </div> <!-- End of the billing system -->
+
+
+     <!-- Menu card which is use for taking order of food -->
+    <div id="MENUCARD" class="whole">
+        <h1>Menu Cards</h1>
+        <section>
+
+            <div class="gpcontainer">
+                <div id="tiffan" class="group">
+
+                    <h2>Tiffan</h2>
+
+                    <div class="container">
+                        <div class="menuDish">Masala Dosa</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">40</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+                    <div class="container">
+                        <div class="menuDish">Plain Dosa</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Single butter Dosa</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Double butter Dosa</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">60</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Idli Vada</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">50</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Idli</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Vada</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">20</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Palav</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Poori</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+                </div>
+                <div id="meal" class="group">
+                    <h2>Meals</h2>
+                    <div class="container">
+                        <div class="menuDish">Rice sambar</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Chappathi meal</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">60</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">North Indian Meals</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">90</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+                    <div class="container">
+                        <div class="menuDish">Mudde Meals</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">70</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Poori Meals</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">70</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                </div>
+                <div id="snack" class="group">
+                    <h2>Snacks</h2>
+                    <div class="container">
+                        <div class="menuDish">Gobbi</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">French friece</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">60</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+                    <div class="container">
+                        <div class="menuDish">Pani Puri</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">30</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+                    <div class="container">
+                        <div class="menuDish">Samosa</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">20</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+                    <div class="container">
+                        <div class="menuDish">kachori</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">25</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                </div>
+                <div id="drinks" class="group">
+                    <h2>Drinks</h2>
+                    <div class="container">
+                        <div class="menuDish">Tea</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">10</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+
+                    <div class="container">
+                        <div class="menuDish">coffee</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">10</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+
+                    <div class="container">
+                        <div class="menuDish">Badam milk</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">10</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Coco cola </div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">25</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Mirinda</div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">25</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                    <div class="container">
+                        <div class="menuDish">Cocalate milk shike </div>
+                        <div class="menuPrice">
+                            <span>₹</span>
+                            <span id="p">25</span>
+                            <span>/-</span>
+                        </div>
+                        <div class="menuOrder">order now</div>
+                        <input type="number" class="menuPlates">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div> <!-- End of the menu card -->
+
+
+    <div id="GALLERY" class="whole"></div>
+
+    <div id="ABOUTUS" class="whole"></div>
 </body>
 <script src="../js/main.js"></script>
+<script src="../js/menucard.js"></script>
 
 </html>
 <!-- <iframe src="demo.html" class="frames" frameborder="0" ></iframe> -->

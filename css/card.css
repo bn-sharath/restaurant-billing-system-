@@ -1,11 +1,14 @@
+#MENUCARD h1{
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
 section{
     /* border: 1rem solid black; */
     text-align: center;
 }
-section h1{
-    font-size: xx-large;
-    text-decoration: underline;
-}
+
 section .gpcontainer{
     display: flex;
     flex-wrap: wrap;
@@ -29,9 +32,11 @@ section .gpcontainer .group h2{
 section .gpcontainer .group .container{
     display: flex;
     margin: 1rem 1rem;
+    padding-top: 0.6rem;
     flex-wrap: nowrap;
     justify-content:center;
     align-content: center;
+    border-top: 0.2rem dashed rgba(0, 0, 0, 0.589);
 }
 
 section .gpcontainer .group .container div{
@@ -41,7 +46,7 @@ section .gpcontainer .group .container div{
 section .gpcontainer .group .container .menuDish{
     text-align: center;
     /* border: 0.3rem solid red; */
-    flex-grow: 4;
+    /* flex-grow: 4; */
     font-size: 1.5rem;
     font-style:oblique;
     font-weight: bolder;
@@ -56,7 +61,7 @@ section .gpcontainer .group .container .menuPrice{
     margin-left: 1rem;
     text-align: center;
     /* padding: 0.7rem; */
-    flex-grow: 3;
+    /* flex-grow: 3; */
     width: 20%;
 }
 
@@ -64,13 +69,13 @@ section .gpcontainer .group .container .menuPrice span{
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 0;
     flex-wrap: nowrap;
 }
 
 section .gpcontainer .group .container .menuOrder{
     /* border: 0.3rem solid brown; */
-    text-align: center;
-    flex-grow: 2;
+    /* flex-grow: 2; */
     margin-right: 1rem;
     font-size: 2rem;
     font-weight: 200;
@@ -80,6 +85,8 @@ section .gpcontainer .group .container .menuOrder{
     color: aliceblue;
     width: 40%;
     border-radius: 1rem;
+    /* text-align: center; */
+    
 }
 section .gpcontainer .group .container .menuOrder:hover{
     background-color: rgb(0, 110, 255);
@@ -89,7 +96,7 @@ section .gpcontainer .group .container .menuPlates {
     /* border: 0.3rem solid violet; */
     font-size: 1rem;
     padding: 0.7rem;
-    flex-grow: 0.5;
+    /* flex-grow: 0.5; */
     text-align: center;
     margin-right: 1rem;
     margin-left: 1rem;

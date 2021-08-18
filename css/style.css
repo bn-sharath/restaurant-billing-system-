@@ -69,6 +69,10 @@ section{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     font-weight: 2rem;
 }
+
+ .dishItem{
+    margin-bottom: 0.85rem;
+}
 #result{
     margin-top: 2rem;
     text-align:center;

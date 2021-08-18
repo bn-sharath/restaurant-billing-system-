@@ -10,32 +10,41 @@ let totalBill = 0;
 
 let order = document.querySelectorAll("section .gpcontainer .group .container .menuOrder");
 
+
 function addDish(dish, cost, status) {
 
     let dishes = document.getElementById("dishes")
     let plates = document.getElementById("plates")
     let price = document.getElementById("price")
 
-    let dishInput = document.createElement("input");
+    let dishInput = document.createElement("span");
     let plateInput = document.createElement("input");
     let priceInput = document.createElement("input");
-    dishInput.type = "text";
-    dishInput.value = dish;
+    // dishInput.type = "text";
+    dishInput.innerHTML = dish;
     plateInput.type = "number";
     plateInput.value = 1;
     priceInput.type = "number";
     priceInput.value = cost;
 
 
-    dishInput.className = "items";
+    // dishInput.className = "items";
+    dishInput.className = "items dishItem";
     plateInput.className = "items";
     priceInput.className = "items";
 
+    plateInput.onblur = function() {
+        numberOfPlate = plateInput.value;
+            // totalBill = totalBill + (cost * numberOfPlate);
+            priceInput.value = cost * numberOfPlate;
+            // priceInput.focus();
+        
+    }
 
     plateInput.onkeyup = function (event) {
         if (event.code == "Enter" || event.code == "NumpadEnter") {
             numberOfPlate = plateInput.value;
-            totalBill = totalBill + (cost * numberOfPlate);
+            // totalBill = totalBill + (cost * numberOfPlate);
             priceInput.value = cost * numberOfPlate;
             priceInput.focus();
         }
@@ -54,14 +63,23 @@ function addDish(dish, cost, status) {
     price.appendChild(priceInput);
 
     // dishInput.focus();
-    // plateInput.focus();
+    // plateInput.focus(); 
 
 }
 
+let totalCalculation = document.querySelector("#total");
+totalCalculation.addEventListener("click", totalPrice);
 
 function totalPrice() {
+    let arrTotal = document.querySelectorAll("#price .items");
+    arrTotal.forEach(element => {
+        totalBill+= parseInt(element.value);
+    });
+
+
     let str = "₹" + totalBill + " rupees only/-";//for ₹ this symbal use (ctr + alt + 4)
     document.getElementById("result").innerHTML = str;
+
 
 
 }
@@ -100,7 +118,7 @@ function cancel(dish) {
 
     
     for (let i=0; i<a.length;i++){
-        if (a[i].value == dish) {
+        if (a[i].innerHTML == dish) {
             b[i].remove();
             c[i].remove();
             a[i].remove();

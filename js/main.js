@@ -1,8 +1,7 @@
-let additem = document.getElementById("additem");
+// let additem = document.getElementById("additem");
 let total = document.getElementById("total");
 // let dishprice = 0;
 let numberOfPlate = 1;
-let totalBill = 0;
 
 // let dishvalue = document.querySelectorAll("#dishes .items");
 // let platevalue = document.querySelectorAll("#plates .items");
@@ -33,12 +32,12 @@ function addDish(dish, cost, status) {
     plateInput.className = "items";
     priceInput.className = "items";
 
-    plateInput.onblur = function() {
+    plateInput.onblur = function () {
         numberOfPlate = plateInput.value;
-            // totalBill = totalBill + (cost * numberOfPlate);
-            priceInput.value = cost * numberOfPlate;
-            // priceInput.focus();
-        
+        // totalBill = totalBill + (cost * numberOfPlate);
+        priceInput.value = cost * numberOfPlate;
+        // priceInput.focus();
+
     }
 
     plateInput.onkeyup = function (event) {
@@ -70,10 +69,16 @@ function addDish(dish, cost, status) {
 let totalCalculation = document.querySelector("#total");
 totalCalculation.addEventListener("click", totalPrice);
 
+// additem.addEventListener("click", ()=>{
+//     addDish("extra",0,"order");
+// });
+
 function totalPrice() {
     let arrTotal = document.querySelectorAll("#price .items");
+    let totalBill = 0;
+
     arrTotal.forEach(element => {
-        totalBill+= parseInt(element.value);
+        totalBill += parseInt(element.value);
     });
 
 
@@ -95,15 +100,15 @@ order.forEach(orderNow => {
         let dish = menulist[0].innerHTML;
         let cost = menulist[1].querySelector(".p").innerHTML;
         let isorder = menulist[2].innerHTML;
-        if (isorder == "order now") {
+        if (isorder == "order") {
 
             addDish(dish, cost, isorder);
             menulist[2].innerHTML = "cancel"
         } else {
             // addDish("", "", isorder);
-            menulist[2].innerHTML = "order now";
+            menulist[2].innerHTML = "order";
 
-            cancel(dish); 
+            cancel(dish);
 
         }
 
@@ -116,8 +121,8 @@ function cancel(dish) {
     let b = document.querySelectorAll("#plates .items")
     let c = document.querySelectorAll("#price .items")
 
-    
-    for (let i=0; i<a.length;i++){
+
+    for (let i = 0; i < a.length; i++) {
         if (a[i].innerHTML == dish) {
             b[i].remove();
             c[i].remove();
@@ -125,5 +130,5 @@ function cancel(dish) {
             break;
         }
     }
-    
+
 }

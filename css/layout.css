@@ -1,0 +1,15 @@
+#bigDesign{
+    display: grid;
+    /* grid-template-rows: repeat(1fr); */
+    grid-template-columns: 2fr 1fr ;
+    border: 3px dashed red;
+}
+
+.whole{
+    border: 2px solid seagreen;
+}
+.whole h1{
+    font-size: 3rem;
+    text-decoration: underline;
+    border: 2px solid rebeccapurple;
+}

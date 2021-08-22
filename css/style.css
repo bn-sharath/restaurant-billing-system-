@@ -1,7 +1,7 @@
 
 
 #HOME section{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     /* display: flex; */
     /* justify-content: center; */
     display: grid;
@@ -10,25 +10,26 @@
 
 .bills h2{
     text-align: center;
-    border-bottom:2px solid black ;
-    background-color: rgba(81, 255, 0, 0.466);
+    /* border-bottom:2px solid black ; */
+    background: rgb(253,107,29);
+    background: linear-gradient(90deg, rgba(253,107,29,1) 30%, rgba(219,145,48,1) 66%);
     margin: 0;
-    padding: 0.8rem;
+    padding: 0.3rem;
     font-size: 2rem;
 }
 #plates{
     flex-grow: 1;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 #price{
     flex-grow: 1;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 #dishes{
     flex-grow: 2;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 .add{
@@ -66,13 +67,15 @@
     border-radius: 1rem;
     display: block;
     width: 80%;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.13);
     padding: 0.5rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
     font-weight: 2rem;
+    outline: none;
 }
 
  .dishItem{

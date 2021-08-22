@@ -104,10 +104,11 @@ order.forEach(orderNow => {
 
             addDish(dish, cost, isorder);
             menulist[2].innerHTML = "cancel"
+            menulist[2].style.backgroundColor="red";
         } else {
             // addDish("", "", isorder);
             menulist[2].innerHTML = "order";
-
+            menulist[2].style.backgroundColor="rgb(0, 60, 255)";
             cancel(dish);
 
         }
@@ -132,3 +133,13 @@ function cancel(dish) {
     }
 
 }
+
+let print = document.querySelector("#print");
+print.addEventListener("click", 
+()=>{
+    let display = document.createElement("div");
+    let result= document.querySelectorAll("#HOME section .items");
+    console.log(result);
+
+
+});

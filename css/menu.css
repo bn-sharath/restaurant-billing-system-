@@ -78,7 +78,7 @@ nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: stretch;
     /* align-items: center; */
     /* text-align: center; */
     /* z-index: 2; */
@@ -96,7 +96,7 @@ nav ul li a{
     text-align: center;
     color: white;
     /* border: 2px dotted; */
-    margin: 0 1rem;
+    margin: 1 1rem;
     font-size: 1.9rem;
     cursor: pointer;
     display: block;
